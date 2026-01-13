@@ -1,0 +1,23 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: antiquewhite;
+}
+h1 {
+    color: #2c5282;
+    text-align: center;
+}
+h2 {
+    color: #3182ce;
+}
+strong {
+    color: #c53030;
+}
+
+.button1{
+    margin: auto;
+    background-color: rgb(107, 61, 207);
+}
