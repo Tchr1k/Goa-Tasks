@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>სტილები, მანქანები და ღილაკები</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f8f9fa;
+            color: #222;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #1a3c5e;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .car-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .car-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .car-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .car-info {
+            padding: 15px;
+        }
+        .price {
+            font-size: 1.5rem;
+            color: #e91e63;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .buy-btn {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .buy-btn:hover {
+            background: #45a049;
+        }
+        .buttons-section {
+            text-align: center;
+            margin: 60px 0;
+        }
+        .styled-btn {
+            margin: 12px;
+            padding: 14px 28px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- დავალება 1: 5 პარაგრაფი style ატრიბუტით -->
+    <h1>5 გასტილული პარაგრაფი (style ატრიბუტით)</h1>
+
+    <p style="color: navy; font-size: 20px; font-family: Georgia, serif; background-color: #e3f2fd; padding: 15px; border-radius: 8px;">
+        ეს არის პირველი პარაგრაფი — ლურჯ-თეთრი ტონებით.
+    </p>
+
+    <p style="color: darkred; font-size: 24px; font-weight: bold; background: #fff5f5; padding: 20px; border-left: 8px solid #c62828;">
+        მეორე პარაგრაფი — მკაფიო და თამამი.
+    </p>
+
+    <p style="color: darkgreen; font-size: 18px; font-style: italic; background: #e8f5e9; padding: 18px; border-radius: 50px 10px 50px 10px;">
+        მესამე — მწვანე და ოდნავ რომანტიული.
+    </p>
+
+    <p style="color: #7b1fa2; font-size: 22px; letter-spacing: 1.5px; background: #f3e5f5; padding: 25px; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">
+        მეოთხე — იისფერი და ცოტა მისტიური.
+    </p>
+
+    <p style="color: #d81b60; font-size: 19px; font-family: 'Courier New', monospace; background: #fce4ec; padding: 22px; border: 3px dashed #f06292;">
+        მეხუთე — ვარდისფერი და რეტრო სტილის.
+    </p>
+
+    <hr style="margin: 60px 0;">
+
+    <!-- დავალება 2 & 3: მანქანების საიტი -->
+    <h1>მანქანების გალერეა</h1>
+
+    <div class="car-grid">
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1502877338535-766e3a6052c0" alt="Porsche 911">
+            <div class="car-info">
+                <h3>Porsche 911 Turbo S</h3>
+                <div class="price">285 000 ₾</div>
+                <a href="congrats.html" class="buy-btn">Buy</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1506719040632-7d586470c936" alt="Lamborghini Huracán">
+            <div class="car-info">
+                <h3>Lamborghini Huracán</h3>
+                <div class="price">420 000 ₾</div>
+                <a href="congrats.html" class="buy-btn">Buy</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1559416523-140ddc3d238c" alt="Ferrari SF90">
+            <div class="car-info">
+                <h3>Ferrari SF90 Stradale</h3>
+                <div class="price">980 000 ₾</div>
+                <a href="congrats.html" class="buy-btn">Buy</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1617814065893-00757125efab" alt="BMW M8">
+            <div class="car-info">
+                <h3>BMW M8 Competition</h3>
+                <div class="price">285 000 ₾</div>
+                <a href="congrats.html" class="buy-btn">Buy</a>
+            </div>
+        </div>
+
+        <div class="car-card">
+            <img src="https://images.unsplash.com/photo-1502489597346-d8389f5069c1" alt="Mercedes AMG GT">
+            <div class="car-info">
+                <h3>Mercedes-AMG GT R</h3>
+                <div class="price">320 000 ₾</div>
+                <a href="congrats.html" class="buy-btn">Buy</a>
+            </div>
+        </div>
+
+    </div>
+
+    <hr style="margin: 60px 0;">
+
+    <!-- დავალება 4: 15 გასტილული ღილაკი -->
+    <h1>15 სხვადასხვა სტილის ღილაკი</h1>
+
+    <div class="buttons-section">
+        <button class="styled-btn" style="background:#e53935;color:white;">მწვანე</button>
+        <button class="styled-btn" style="background:#3949ab;color:white;">ლურჯი</button>
+        <button class="styled-btn" style="background:#7cb342;color:white;">მწვანე</button>
+        <button class="styled-btn" style="background:#fb8c00;color:white;">ნარინჯისფერი</button>
+        <button class="styled-btn" style="background:#8e24aa;color:white;">იისფერი</button>
+        <button class="styled-btn" style="background:#009688;color:white;border-radius:50px;">მრგვალი</button>
+        <button class="styled-btn" style="background:#546e7a;color:white;box-shadow:0 4px 8px rgba(0,0,0,0.3);">ჩრდილით</button>
+        <button class="styled-btn" style="background:#f06292;color:white;font-weight:bold;">ვარდისფერი</button>
+        <button class="styled-btn" style="background:#455a64;color:white;letter-spacing:2px;">დისტანცია</button>
+        <button class="styled-btn" style="background:#0288d1;color:white;padding:18px 40px;font-size:1.3rem;">დიდი</button>
+        <button class="styled-btn" style="background:#f57c00;color:white;border:3px solid #ef6c00;">ბორდერი</button>
+        <button class="styled-btn" style="background:#388e3c;color:white;transform:scale(1.1);">გაზრდილი</button>
+        <button class="styled-btn" style="background:#0288d1;color:white;border-radius:30px 5px;">უცნაური კუთხეები</button>
+        <button class="styled-btn" style="background:#7e57c2;color:white;text-transform:uppercase;">დიდი ასოებით</button>
+        <button class="styled-btn" style="background:#c2185b;color:white;opacity:0.9;">ნახევრად გამჭვირვალე</button>
+    </div>
+
+
+
+
+</body>
+</html>

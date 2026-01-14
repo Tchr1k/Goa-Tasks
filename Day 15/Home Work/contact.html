@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>კონტაქტი</title>
+    <style>body{font-family:Arial;margin:0;padding:20px;background:#f0f8ff;} nav{background:#333;color:white;padding:10px;text-align:center;} nav a{color:white;margin:0 15px;text-decoration:none;}</style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">მთავარი</a>
+        <a href="about.html">ჩემ შესახებ</a>
+        <a href="contact.html">კონტაქტი</a>
+    </nav>
+
+    <h1>დამიკავშირდი</h1>
+
+    <form action="/send" method="POST">
+        <label for="name">შენი სახელი:</label><br>
+        <input type="text" id="name" name="name" placeholder="მაგ: გიორგი" required><br><br>
+
+        <label for="message">შეტყობინება:</label><br>
+        <input type="text" id="message" name="message" placeholder="დამიწერე აქ..." required><br><br>
+
+        <button type="submit">გაგზავნა</button>
+    </form>
+
+    <p>ან მომწერე: <a href="mailto:niko@example.com">niko@example.com</a></p>
+
+</body>
+</html>

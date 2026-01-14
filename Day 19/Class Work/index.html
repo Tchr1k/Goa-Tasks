@@ -1,0 +1,126 @@
+<!-- ⁡⁢⁢⁣𝟭) შექმენით საიტი რომელიც იქნება ცხოველებზე, საიტზე უნდა იყოს ხუთი ცხოველი, თითო ცხოველზე უნდა იყოს ინფორმაცია და აუდიო⁡ -->
+ <!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ცხოველების სამყარო</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        .animal {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .animal img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+        .content {
+            padding: 25px;
+        }
+        h2 {
+            color: #1a5c38;
+            margin-top: 0;
+        }
+        audio {
+            width: 100%;
+            margin-top: 15px;
+        }
+        .source-note {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ცხოველების სამყარო</h1>
+
+    <!-- ცხოველი 1 -->
+    <div class="animal">
+        <img src="https://images.unsplash.com/photo-1564349680-5bfe8b3b0d87" alt="ლომი">
+        <div class="content">
+            <h2>ლომი (Panthera leo)</h2>
+            <p>ლომი ტყის მეფედ ითვლება. ისინი ცხოვრობენ ჯგუფებად (პრაიდებად), სადაც მდედრები ძირითადად ნადირობენ, ხოლო მამლები იცავენ ტერიტორიას. მათი ღრიალი 8 კმ-მდე მანძილზე ისმის!</p>
+            <audio controls>
+                <source src="https://www.soundjay.com/animals/lion-roar-1.mp3" type="audio/mpeg">
+                თქვენი ბრაუზერი არ უჭერს მხარს აუდიო ელემენტს.
+            </audio>
+            <div class="source-note">ლომის ღრიალი</div>
+        </div>
+    </div>
+
+    <!-- ცხოველი 2 -->
+    <div class="animal">
+        <img src="https://images.unsplash.com/photo-1561948955-570b270e7c36" alt="პანდა">
+        <div class="content">
+            <h2>დიდი პანდა (Ailuropoda melanoleuca)</h2>
+            <p>პანდა ძირითადად ბამბუს ჭამს და დღეში 12-38 კგ-მდე ბამბუს მიირთმევს. მიუხედავად იმისა, რომ ხორცისმჭამელია, 99% მცენარეულ საკვებს მიირთმევს.</p>
+            <audio controls>
+                <source src="https://www.soundjay.com/animals/panda-sound.mp3" type="audio/mpeg">
+                თქვენი ბრაუზერი არ უჭერს მხარს აუდიო ელემენტს.
+            </audio>
+            <div class="source-note">პანდას ხმები</div>
+        </div>
+    </div>
+
+    <!-- ცხოველი 3 -->
+    <div class="animal">
+        <img src="https://images.unsplash.com/photo-1564349696-f46d7d8f5d2e" alt="დელფინი">
+        <div class="content">
+            <h2>ბოთლისცხვირიანი დელფინი (Tursiops truncatus)</h2>
+            <p>დელფინები ძალიან ჭკვიანები არიან, იყენებენ ექოსოკაციას და ცნობილია თავიანთი სოციალური ქცევით. ისინი შეუძლიათ საკუთარი სახელის ამოცნობა.</p>
+            <audio controls>
+                <source src="https://www.soundjay.com/animals/dolphin-sounds-1.mp3" type="audio/mpeg">
+                თქვენი ბრაუზერი არ უჭერს მხარს აუდიო ელემენტს.
+            </audio>
+            <div class="source-note">დელფინის ხმები</div>
+        </div>
+    </div>
+
+    <!-- ცხოველი 4 -->
+    <div class="animal">
+        <img src="https://images.unsplash.com/photo-1546184079-4c0c0b5e53c0" alt="თოვლის ლეოპარდი">
+        <div class="content">
+            <h2>თოვლის ლეოპარდი (Panthera uncia)</h2>
+            <p>თოვლის ლეოპარდი ცხოვრობს მაღალ მთებში და შესანიშნავად ერწყმის თოვლს თავისი ფერით. ისინი მარტოხელები არიან და ძალიან ცოტაა ბუნებაში.</p>
+            <audio controls>
+                <source src="https://www.soundjay.com/animals/snow-leopard-growl.mp3" type="audio/mpeg">
+                თქვენი ბრაუზერი არ უჭერს მხარს აუდიო ელემენტს.
+            </audio>
+            <div class="source-note">თოვლის ლეოპარდის ღრიალი</div>
+        </div>
+    </div>
+
+    <!-- ცხოველი 5 -->
+    <div class="animal">
+        <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" alt="კენგურუ">
+        <div class="content">
+            <h2>წითელი კენგურუ (Macropus rufus)</h2>
+            <p>კენგურუ მსოფლიოში ყველაზე დიდი ჩანთოსანია. მათ შეუძლიათ 8 მეტრამდე ხტომა ერთ ნახტომში და 56 კმ/სთ სიჩქარით სირბილი.</p>
+            <audio controls>
+                <source src="https://www.soundjay.com/animals/kangaroo-sound.mp3" type="audio/mpeg">
+                თქვენი ბრაუზერი არ უჭერს მხარს აუდიო ელემენტს.
+            </audio>
+            <div class="source-note">კენგურუს ხმები</div>
+        </div>
+    </div>
+
+</body>
+</html>

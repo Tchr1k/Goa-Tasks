@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მანქანები</title>
+    <style>
+        /* იგივე სტილი გამეორებით - მაქსიმალურად აქამდე ნასწავლი */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #ff6200;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 36px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        
+        nav ul li a:hover {
+            background-color: #004080;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        
+        div.container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        div.card {
+            background-color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        div.card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        div.card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        
+        div.card p {
+            font-size: 1em;
+        }
+        
+        /* სია სტილით */
+        ul.special-list {
+            list-style: none;
+            padding: 0;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        
+        ul.special-list li {
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+        }
+        
+        ul.special-list li:nth-child(1) {
+            background-color: #0066cc;
+            color: white;
+        }
+        
+        ul.special-list li:nth-child(2) {
+            color: #006600;
+            background-color: white;
+            border: 2px solid #006600;
+        }
+        
+        ul.special-list li:nth-child(3) {
+            background-color: #cc0000;
+            color: white;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        მანქანები
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="moto.html">მოტოები</a></li>
+            <li><a href="cars.html">მანქანები</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!-- აუცილებლად გამოყენებული <div> -->
+        <div class="container">
+            <div class="card">
+                <h2>Audi RS7</h2>
+                <p>სპორტული სედანი მაღალი შესრულებით.</p>
+                <img src="https://example.com/audi-rs7.jpg" alt="Audi RS7">
+            </div>
+            <div class="card">
+                <h2>Mercedes-AMG GT</h2>
+                <p>ლუქსური სუპერქარი ელეგანტური დიზაინით.</p>
+                <img src="https://example.com/mercedes-amg-gt.jpg" alt="Mercedes-AMG GT">
+            </div>
+            <div class="card">
+                <h2>BMW M4</h2>
+                <p>დინამიური კუპე სიჩქარის მოყვარულთათვის.</p>
+                <img src="https://example.com/bmw-m4.jpg" alt="BMW M4">
+            </div>
+        </div>
+        
+        <!-- სია აქამდე ნასწავლიდან -->
+        <ul class="special-list">
+            <li>პირველი მანქანა - ლურჯი ფონი</li>
+            <li>მეორე მანქანა - მწვანე ტექსტი</li>
+            <li>მესამე მანქანა - წითელი ფონი</li>
+        </ul>
+    </main>
+    
+    <footer>
+        &copy; 2026 მოტოები და მანქანები
+    </footer>
+</body>
+</html>

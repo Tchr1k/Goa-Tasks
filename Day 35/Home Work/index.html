@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future City • მომავლის ქალაქი</title>
+
+    <style>
+        /* ზოგადი სტილები */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background: linear-gradient(180deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            color: #e0e0ff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Header / Hero Section */
+        header {
+            background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1920') 
+                        center/cover no-repeat fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            position: relative;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.55);
+        }
+
+        header .content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+
+        h1 {
+            font-size: 5.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 20px rgba(0,0,255,0.6);
+            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1.2rem 3rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: white;
+            background: linear-gradient(45deg, #7c3aed, #00d4ff);
+            border: none;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            box-shadow: 0 10px 30px rgba(124, 58, 237, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 50px rgba(124, 58, 237, 0.6);
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        section {
+            margin-bottom: 8rem;
+        }
+
+        h2 {
+            font-size: 3.5rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(90deg, #00ffff, #ff00aa);
+            -webkit-text-fill-color: transparent;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.07);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 16px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 30px 70px rgba(0,212,255,0.25);
+        }
+
+        .card img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 2rem;
+        }
+
+        .card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #00d4ff;
+        }
+
+        /* Features List */
+        .features {
+            list-style: none;
+            padding: 0;
+            font-size: 1.2rem;
+        }
+
+        .features li {
+            margin: 1rem 0;
+            padding-left: 2rem;
+            position: relative;
+        }
+
+        .features li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #00ffff;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0,0,0,0.6);
+            backdrop-filter: blur(10px);
+            padding: 4rem 2rem;
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        footer p {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            color: #00d4ff;
+            margin: 0 1.5rem;
+            font-size: 2rem;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #ff00aa;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <div class="content">
+            <h1>Future City</h1>
+            <p class="subtitle">მომავლის ქალაქი • 2050</p>
+            <a href="#features" class="btn">გამოიკვლიე ახლა</a>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Features Section -->
+        <section id="features">
+            <h2>მომავლის ტექნოლოგიები</h2>
+            
+            <div class="grid">
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?w=800" alt="Flying Cars">
+                    <div class="card-content">
+                        <h3>მფრინავი ავტომობილები</h3>
+                        <ul class="features">
+                            <li>სრული ავტონომიური მართვა</li>
+                            <li>ვერტიკალური აფრენა/დაფრენა</li>
+                            <li>ენერგია: წყალბადი + ელექტრო</li>
+                            <li>მაქსიმალური სიჩქარე: 320 კმ/სთ</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800" alt="Smart Homes">
+                    <div class="card-content">
+                        <h3>ჭკვიანი სახლები</h3>
+                        <ul class="features">
+                            <li>ნეირონული ინტერფეისი</li>
+                            <li>თვითგანახლებადი მასალები</li>
+                            <li>ენერგიის 100% განახლებადი</li>
+                            <li>AI პერსონალური ასისტენტი</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1557683316-973673baf926?w=800" alt="Vertical Gardens">
+                    <div class="card-content">
+                        <h3>ვერტიკალური ბაღები</h3>
+                        <ul class="features">
+                            <li>200+ მეტრი სიმაღლე</li>
+                            <li>სრულიად ავტომატური მორწყვა</li>
+                            <li>ჟანგბადის 40%-ით მეტი წარმოება</li>
+                            <li>საკვები კულტურები მთელი წლის განმავლობაში</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Vision Section -->
+        <section>
+            <h2>ჩვენი ხედვა</h2>
+            <div style="max-width:900px; margin:0 auto; background:rgba(255,255,255,0.05); 
+                        backdrop-filter:blur(10px); padding:3rem; border-radius:16px; 
+                        border:1px solid rgba(255,255,255,0.1); text-align:center;">
+                <p style="font-size:1.5rem; margin-bottom:2rem;">
+                    მომავალი ქალაქი — სადაც ტექნოლოგია და ბუნება ერთიანდება.<br>
+                    სადაც ყველა ადამიანს აქვს წვდომა სუფთა ჰაერზე, ენერგიაზე და ცოდნაზე.<br>
+                    სადაც დროის უმეტეს ნაწილს ადამიანი ატარებს შემოქმედებაში, 
+                    და არა გადარჩენაში.
+                </p>
+                <a href="#" class="btn">შეუერთდი მომავალს</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2050 Future City — ყველა უფლება დაცულია</p>
+        <div class="social-links" style="margin-top:1.5rem;">
+            <a href="#">Twitter</a> •
+            <a href="#">Instagram</a> •
+            <a href="#">NeuralNet</a>
+        </div>
+    </footer>
+
+</body>
+</html>

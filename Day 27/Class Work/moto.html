@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>მოტოები</title>
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #ff6200;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 36px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        
+        nav ul li a:hover {
+            background-color: #004080;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        
+        div.container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        div.card {
+            background-color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        div.card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        
+        div.card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+        
+        div.card p {
+            font-size: 1em;
+        }
+        
+        
+        ul.special-list {
+            list-style: none;
+            padding: 0;
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        
+        ul.special-list li {
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+        }
+        
+        ul.special-list li:nth-child(1) {
+            background-color: #0066cc; 
+            color: white;
+        }
+        
+        ul.special-list li:nth-child(2) {
+            color: #006600; 
+            background-color: white;
+            border: 2px solid #006600;
+        }
+        
+        ul.special-list li:nth-child(3) {
+            background-color: #cc0000; 
+            color: white;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        მოტოები
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="moto.html">მოტოები</a></li>
+            <li><a href="cars.html">მანქანები</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        
+        <div class="container">
+            <div class="card">
+                <h2>Honda CBR1000RR</h2>
+                <p>სპორტული მოტოციკლეტი მაღალი სიჩქარით და დინამიური დიზაინით.</p>
+                <img src="https://example.com/honda-cbr.jpg" alt="Honda CBR1000RR"> <!-- შეცვალეთ რეალური URL-ით -->
+            </div>
+            <div class="card">
+                <h2>Harley-Davidson Fat Boy</h2>
+                <p>კლასიკური კრუზერი კომფორტული მოგზაურობებისთვის.</p>
+                <img src="https://example.com/harley-fatboy.jpg" alt="Harley-Davidson Fat Boy">
+            </div>
+            <div class="card">
+                <h2>BMW R 1250 GS</h2>
+                <p>ადვენჩერ მოტოციკლეტი ოფროუდისთვის და გრძელი ტურებისთვის.</p>
+                <img src="https://example.com/bmw-r1250gs.jpg" alt="BMW R 1250 GS">
+            </div>
+        </div>
+        
+       
+        <ul class="special-list">
+            <li>პირველი მოტო - ლურჯი ფონი</li>
+            <li>მეორე მოტო - მწვანე ტექსტი</li>
+            <li>მესამე მოტო - წითელი ფონი</li>
+        </ul>
+    </main>
+    
+    <footer>
+        &copy; 2026 მოტოები და მანქანები
+    </footer>
+</body>
+</html>

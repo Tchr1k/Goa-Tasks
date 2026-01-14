@@ -1,0 +1,102 @@
+<!-- <div> თეგის გამოყენება კარგი პრაქტიკაა, რადგან:
+     - იგი საშუალებას გვაძლევს გავყოთ გვერდი ლოგიკურ ბლოკებად (მაგ. ჰედერი, მეინი, ფუტერი), რაც ამარტივებს კოდის წაკითხვას და მენტენენსს.
+     - საშუალებას იძლევა CSS-ით სტილიზაცია (კლასები, ID-ები), რაც ქმნის მოქნილ დიზაინს.
+     - ხელს უწყობს სემანტიკურ HTML-ს (თუმცა უკეთესია გამოიყენოთ <section>, <article> თუ შესაძლებელია), რაც აუმჯობესებს SEO-ს და ხელმისაწვდომობას (accessibility).
+     - არ აქვს საკუთარი მნიშვნელობა, ამიტომ იდეალურია კონტეინერად სხვა ელემენტებისთვის. -->
+
+
+     <!-- <div> არის block-level ელემენტი.
+     ახსნა: Block-level ელემენტები იწყებენ ახალ ხაზს და იკავებენ მთელ ხელმისაწვდომ სიგანეს (ნაგულისხმევად 100%).
+     მაგალითი: თუ გვერდზე გვაქვს ორი <div>, ისინი ერთმანეთის ქვეშ განლაგდებიან, არა გვერდიგვერდ.
+     დასაბუთება: HTML სპეციფიკაციაში (MDN ან W3C) <div> კლასიფიცირებულია როგორც block. შეგიძლიათ შეცვალოთ CSS-ით (display: inline), მაგრამ ნაგულისხმევად block-ია.
+     მაგალითი: <div>ბლოკი 1</div><div>ბლოკი 2</div> — ისინი ვერტიკალურად განლაგდებიან. -->
+
+
+     <!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grok-ის შესახებ</title>
+    <style>
+        /* აქამდე ნასწავლი სტილები: ფერები, გრიდი, ჰოვერი */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6200; /* ნარინჯისფერი, როგორც წინა */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            font-size: 36px;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        div.profile {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        div.profile img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+        ul.special-list {
+            list-style: none;
+            padding: 0;
+        }
+        ul.special-list li {
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+        }
+        ul.special-list li:nth-child(1) { background-color: #0066cc; color: white; }
+        ul.special-list li:nth-child(2) { color: #006600; background-color: white; border: 2px solid #006600; }
+        ul.special-list li:nth-child(3) { background-color: #cc0000; color: white; }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Grok by xAI
+    </header>
+    <main>
+        <!-- აუცილებლად გამოყენებული <div> -->
+        <div class="profile">
+            <div class="photo">
+                <!-- ჩემი ფოტო -->
+
+<grok-card data-id="e7058f" data-type="image_card"  data-arg-size="LARGE" ></grok-card>
+
+            </div>
+            <div class="info">
+                <h2>სახელი: Grok</h2>
+                <p>გვარი: by xAI (როგორც AI, არ მაქვს ტრადიციული გვარი)</p>
+                <p>შესახებ: მე ვარ Grok, შექმნილი xAI-ის მიერ. ვეხმარები კითხვებზე პასუხებში, პროგრამირებაში და სხვაში.</p>
+                <ul class="special-list">
+                    <li>საყვარელი პროგრამირების ენა: Python</li>
+                    <li>ჰობი: დახმარება ადამიანებს სწავლაში</li>
+                    <li>სხვა: მიყვარს იუმორი და სამყაროს შესწავლა</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2026 Grok by xAI
+    </footer>
+</body>
+</html>

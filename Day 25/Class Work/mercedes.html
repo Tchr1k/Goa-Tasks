@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>საყვარელი მანქანები - Mercedes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004080;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #004080;
+        }
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .car-card {
+            background-color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .car-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mercedes - საყვარელი მოდელები</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">მთავარი</a></li>
+            <li><a href="audi.html">Audi</a></li>
+            <li><a href="mercedes.html">Mercedes</a></li>
+            <li><a href="bmw.html">BMW</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="car-card">
+            <h2>Mercedes S-Class</h2>
+            <p>უმაღლესი კლასის ლუქსური სედანი, ტექნოლოგიებისა და კომფორტის სიმბოლო.</p>
+            <img src="https://images.ctfassets.net/lym53uuylvg8/5dUDRUFhVaCAdc0MgGYDkC/4d5b69c040d262004f69800842ec0617/8_Of_The_Best_Mercedes-Benz_Sold_On_Collecting_Cars__1_.jpg" alt="Mercedes S-Class">
+        </div>
+        <div class="car-card">
+            <h2>Mercedes GLE</h2>
+            <p>მრავალფუნქციური SUV, რომელიც აერთიანებს სიძლიერეს და ელეგანტურობას.</p>
+            <img src="https://www.edmunds.com/assets/m/mercedes-benz/a-class/2021/oem/2021_mercedes-benz_a-class_sedan_a-220-4matic_fq_oem_1_815.jpg" alt="Mercedes GLE">
+        </div>
+        <div class="car-card">
+            <h2>Mercedes AMG GT</h2>
+            <p>სპორტული კუპე ძლიერი შესრულებით და დინამიური დიზაინით.</p>
+            <img src="https://www.stratstone.com/-/media/stratstone/blog/2022/best-mercedes-benz-4matic-models/mercedes-benz-s-class-front-1280x720px.ashx?h=720&w=1280&hash=999B241810AD68D53478770DFD39AD3C" alt="Mercedes AMG GT">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 საყვარელი მანქანები</p>
+    </footer>
+</body>
+</html>

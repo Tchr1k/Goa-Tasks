@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>საყვარელი მანქანები - BMW</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #004080;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav ul li a:hover {
+            background-color: #004080;
+        }
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .car-card {
+            background-color: #333;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .car-card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BMW - საყვარელი მოდელები</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">მთავარი</a></li>
+            <li><a href="audi.html">Audi</a></li>
+            <li><a href="mercedes.html">Mercedes</a></li>
+            <li><a href="bmw.html">BMW</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="car-card">
+            <h2>BMW M5</h2>
+            <p>ძლიერი სპორტული სედანი, რომელიც აერთიანებს სიჩქარეს და კონტროლს.</p>
+            <img src="https://cdn.bmwblog.com/wp-content/uploads/2021/08/2021_bmw_m5_cs_images_06.jpg" alt="BMW M5">
+        </div>
+        <div class="car-card">
+            <h2>BMW X5</h2>
+            <p>მრავალფუნქციური SUV ოჯახური და თავგადასავლური მოგზაურობებისთვის.</p>
+            <img src="https://cdn.dicklovett.co.uk/uploads/asset_image/2_5986.png" alt="BMW X5">
+        </div>
+        <div class="car-card">
+            <h2>BMW 3 Series</h2>
+            <p>კლასიკური სედანი დინამიური მართვით და ელეგანტური დიზაინით.</p>
+            <img src="https://pictures.dealer.com/b/bmwofrochesterhillsbmw/1234/b03c52de6b6e416282add1fc929048e5.png?impolicy=downsize_bkpt&w=396" alt="BMW 3 Series">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2026 საყვარელი მანქანები</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,22 @@
+header{
+    background-color: rgb(238, 187, 187);
+    height: 80px;
+}
+
+.navA{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 24px;
+}
+nav{
+    text-align: center;
+    padding: 20px;
+}
+
+.navA:hover{
+    color: rgb(203, 203, 203);
+    font-size: 25px;
+        transition-duration: 0.5s;
+
+}

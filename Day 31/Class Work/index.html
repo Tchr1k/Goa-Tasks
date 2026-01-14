@@ -1,0 +1,207 @@
+<!-- ⁡⁢⁢⁣𝟭) შექმენით მაღაზიის საიტი სადაც იქნება პროდუქტები, თითოეულ პროდუქტს უნდა ჰქონდეს: სურათი დასახელება ფასი და ღილაკი.
+
+ასევე გამოიყენეთ 𝙞𝙣𝙩𝙚𝙧𝙣𝙖𝙡 𝙘𝙨𝙨 და გასტილეთ სურვილისამებრ, საიტი უნდა იყოს რაც შეიძლება ორგანიზებული⁡ -->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TechStore • ონლაინ მაღაზია</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f6fa;
+            color: #2d3436;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2c3e50 0%, #1a2634 100%);
+            color: white;
+            padding: 2.5rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 3rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .product-image {
+            height: 260px;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            transition: transform 0.4s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.08);
+        }
+
+        .product-info {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-title {
+            font-size: 1.4rem;
+            margin-bottom: 0.8rem;
+            color: #2d3436;
+        }
+
+        .product-price {
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #e74c3c;
+            margin: 0.5rem 0 1rem;
+        }
+
+        .btn-add {
+            margin-top: auto;
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            padding: 0.9rem 1.5rem;
+            border-radius: 8px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .btn-add:hover {
+            background-color: #219653;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            background: #2c3e50;
+            color: #bdc3c7;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.2rem; }
+            .product-image { height: 220px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TechStore</h1>
+        <p>საუკეთესო ტექნიკა • საუკეთესო ფასებით</p>
+    </header>
+
+    <div class="container">
+        <div class="products-grid">
+
+            <!-- პროდუქტი 1 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=800" alt="MacBook Pro">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">MacBook Pro 16" M3 Pro</h2>
+                    <div class="product-price">3,499 ₾</div>
+                    <button class="btn-add" onclick="alert('პროდუქტი დაემატა კალათაში!')">კალათაში დამატება</button>
+                </div>
+            </div>
+
+            <!-- პროდუქტი 2 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=800" alt="iPhone 15 Pro">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">iPhone 15 Pro Max 256GB</h2>
+                    <div class="product-price">4,199 ₾</div>
+                    <button class="btn-add" onclick="alert('პროდუქტი დაემატა კალათაში!')">კალათაში დამატება</button>
+                </div>
+            </div>
+
+            <!-- პროდუქტი 3 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=800" alt="Sony WH-1000XM5">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">Sony WH-1000XM5</h2>
+                    <div class="product-price">1,299 ₾</div>
+                    <button class="btn-add" onclick="alert('პროდუქტი დაემატა კალათაში!')">კალათაში დამატება</button>
+                </div>
+            </div>
+
+            <!-- პროდუქტი 4 -->
+            <div class="product-card">
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1588109273901-15e37cd63542?w=800" alt="Samsung Galaxy Watch 7">
+                </div>
+                <div class="product-info">
+                    <h2 class="product-title">Samsung Galaxy Watch 7</h2>
+                    <div class="product-price">899 ₾</div>
+                    <button class="btn-add" onclick="alert('პროდუქტი დაემატა კალათაში!')">კალათაში დამატება</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        © 2026 TechStore • ყველა უფლება დაცულია
+    </footer>
+
+</body>
+</html>

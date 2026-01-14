@@ -1,0 +1,120 @@
+<!-- ⁡⁢⁢⁣𝟯) შექმენით 𝟱-ი ღილაკი, რომელსაც გასტილავთ როოგრც თქვენ გსურთ, და გამოიყენეთ 𝙖𝙡𝙚𝙧𝙩 როდესაც დააკლიკებთ ღილაკს გამოიტანოს ნებისმიერი მესიჯი.⁡ -->
+
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>5 სხვადასხვა ღილაკი</title>
+    
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f0f1a;
+            color: #e0e0ff;
+            min-height: 100vh;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        h1 {
+            color: #7b5eff;
+            margin-bottom: 20px;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 1000px;
+        }
+
+        .btn {
+            font-size: 1.1rem;
+            padding: 14px 28px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            font-weight: bold;
+            min-width: 160px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+
+        .btn:active {
+            transform: translateY(-1px);
+        }
+
+        /* ღილაკების სხვადასხვა სტილი */
+        .btn-1 {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .btn-2 {
+            background: #ff6b6b;
+            color: white;
+            box-shadow: 0 4px 0 #c44545;
+        }
+
+        .btn-2:hover {
+            box-shadow: 0 8px 0 #c44545;
+        }
+
+        .btn-3 {
+            background: #2ed573;
+            color: white;
+            border: 3px solid #26ad5f;
+        }
+
+        .btn-4 {
+            background: #1e272e;
+            color: #f5f6fa;
+            border: 2px solid #718093;
+        }
+
+        .btn-5 {
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            color: #2f3542;
+            font-family: 'Segoe UI', sans-serif;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>5 განსხვავებული ღილაკი</h1>
+
+    <div class="buttons-container">
+        <button class="btn btn-1" onclick="alert('შენ დააჭირე მეწამულ-ლურჯ ღილაკს! ✨')">
+            მეწამული გრადიენტი
+        </button>
+
+        <button class="btn btn-2" onclick="alert('წითელი ღილაკი გააქტიურდა! 🔥')">
+            წითელი ბრტყელი
+        </button>
+
+        <button class="btn btn-3" onclick="alert('მწვანე ღილაკი ამბობს: კარგი არჩევანია! 🌿')">
+            მწვანე ჩარჩოთი
+        </button>
+
+        <button class="btn btn-4" onclick="alert('მუქი ღილაკი გამარჯობას გიხდის! 🌙')">
+            მუქი მინიმალისტური
+        </button>
+
+        <button class="btn btn-5" onclick="alert('ვარდისფერი გრადიენტი გილოცავს! 💗')">
+            ვარდისფერი ნაზი
+        </button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+body {
+    background-color: antiquewhite;
+}
+
+.p1 {
+    text-decoration: dotted underline green;
+}
+
+.p2 {
+    text-decoration: line-through ;
+}
+
+.p3 {
+    text-decoration: double overline red;
+}
+
+.p4 {
+    text-decoration: underline;
+}
+
+.p5 {
+    text-decoration: dotted line-through green;
+}
+
+.p6 {
+    text-decoration: line-through ;
+}
+
+.p7 {
+    text-decoration: overline green;
+}
+
+.p8 {
+    text-decoration: overline;
+}
+
+.p9 {
+    color: grey;
+    text-decoration: overline gray;
+}
+
+.p10 {
+    text-decoration: dotted underline green;
+}
+
+.p11 {
+    text-decoration: wavy underline green;
+}
+
+.p12 {
+    text-decoration: dotted underline overline red;
+}
+
+.p13 {
+    text-decoration: line-through blue;
+}
+
+.RGB {
+    color: rgb(15, 160, 15);
+}
+
+.HEX {
+    color: #5a050b;
+}
