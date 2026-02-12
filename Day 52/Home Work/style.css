@@ -1,0 +1,17 @@
+div{
+    background-color: brown;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 40px;
+    color: aliceblue;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 100px;
+}
